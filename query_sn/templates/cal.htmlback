@@ -1,0 +1,17 @@
+<!doctype html>
+<title>cal</title>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+<div class=page>
+  <h1>Cal.html</h1>
+{% block body %}
+  <h2>cal</h2>
+  <form action="{{ url_for('calmo') }}" method=post>
+    <dl>
+      <dt>sn:
+      <dd><input type=text name=sn>
+      <dd><input type=submit value=cal>
+    </dl>
+  </form>
+{%for item in  sn  %}<p class=sn><strong>SN:</strong> {{ sn }}{% endfor %}
+</div>
+{% endblock %}

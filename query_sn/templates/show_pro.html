@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<title>cal</title>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>费用计算</h1>
+  <form action="{{ url_for('show_pro') }}" method=post>
+  </form>
+<ul>
+{% for project,money in allpro %}
+   <table border=1>
+     <tr><td>{{ project }}</td><td>{{ money }}</td></tr>
+   </table>
+  {% else %}
+  <li><em>error</em>
+  {% endfor %}
+</ul>
+<p><a href=http://123.57.133.199:8080>返回</a>
+</body>
+</html>
+

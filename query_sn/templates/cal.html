@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<title>cal</title>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>费用计算</h1>
+  <form action="{{ url_for('calmo') }}" method=post>
+    <dl>
+      <dt>sn:
+        <dd><input type=text name=sn>
+{#      <textarea name="a" style="width:200px;height:80px;"></textarea> #}
+      <dd><input type=submit value=submit>
+    </dl>
+  </form>
+<ul>
+{#{% for item in money %}
+    <li><h2>{{ item.sn }}</h2>
+    <li><h2>{{ item.money|safe }}</h2>
+    <li><h2>{{ item.project }} </h2>
+    <li><h2>{{ item.pro_id }} </h2> 
+  {% else %}
+  <li><em>error</em>
+  {% endfor %} #}
+计算结果 <table border=1>
+             <tr><td>{{ total }}</td></tr>
+         </table>
+<p><a href=http://123.57.133.199:8080/show>展示所有费用</a>
+</ul>
+</body>
+</html>
+
