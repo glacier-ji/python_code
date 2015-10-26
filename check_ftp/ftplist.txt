@@ -1,0 +1,14 @@
+[server0]
+server0_ip = 1.49.8.12
+server0_port = 6
+
+
+[server1]
+server1_ip = 1.1.1.10
+server1_port = 65
+
+[server2]
+server2_ip = 18.19.14.1
+server2_port = 51
+
+
