@@ -46,7 +46,7 @@ def send_mail(filename):
     att1["Content-Disposition"] = 'attachment; filename="ins.csv"'
     msg.attach(att1) 
     #add mail header
-    msg['Subject'] = '海外实例’.encode('gb2312')'
+    msg['Subject'] = '’.encode('gb2312')'
     msg['To'] = 'xx@163.com'
     msg['From'] = 'xx@163.com'
     try:
