@@ -37,7 +37,7 @@ def calmo():
     sn = []
     db = get_db()
     sum_list = []
-    query = """select * from zichan where sn = ?"""
+    query = """select * from zc where sn = ?"""
     if request.method == 'POST':
         data = request.form['sn']
         sn = data.split()
