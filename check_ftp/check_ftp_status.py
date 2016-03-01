@@ -12,8 +12,8 @@ import ssl
 cf = ConfigParser.ConfigParser()
 cf.read(r'e:\project1\ftplist.txt')
 
-user = 'check_login'
-password = '45H'
+user = 'user'
+password = ''
 server_info = []
 
 #定义FTP_TLS类
